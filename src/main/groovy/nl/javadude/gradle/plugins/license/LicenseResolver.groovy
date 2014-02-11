@@ -20,7 +20,7 @@ class LicenseResolver {
 
     private static final Logger logger = Logging.getLogger(LicenseResolver);
 
-    private static final String DEFAULT_CONFIGURATION_TO_HANDLE = "runtime"
+    private static final String DEFAULT_CONFIGURATION_TO_HANDLE = "compile"
 
     /**
      * Reference to gradle project.
