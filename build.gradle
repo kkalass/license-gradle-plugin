@@ -59,7 +59,7 @@ uploadArchives {
             uniqueVersion = false
             // beforeDeployment { org.gradle.api.artifacts.maven.MavenDeployment deployment -> signing.signPom(deployment) }
 
-            repository(url: "file://localhost/Users/klas/localMavenRepo")
+            repository(url: "../../../../localRepo")
 
             //repository(url: 'https://oss.sonatype.org/service/local/staging/deploy/maven2') {
             //    authentication(userName: sonatypeUsername, password: sonatypePassword)
