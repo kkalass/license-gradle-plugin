@@ -60,7 +60,7 @@ class DownloadLicensesIntegTest extends Specification {
         setup:
         subproject.dependencies {
             compile "org.jboss.logging:jboss-logging:3.1.3.GA"
-            compile "com.google.guava:guava:15.0"
+            compile "com.google.guava:guava:23.6-android"
         }
 
         when:
@@ -78,14 +78,14 @@ class DownloadLicensesIntegTest extends Specification {
         setup:
         subproject.dependencies {
             compile "org.jboss.logging:jboss-logging:3.1.3.GA"
-            compile "com.google.guava:guava:15.0"
+            compile "com.google.guava:guava:23.6-android"
         }
 
         project.dependencies {
             compile project.project(":subproject1")
         }
         downloadLicenses.licenses = [
-                "com.google.guava:guava:15.0": license("MY_LICENSE", "MY_URL"),
+                "com.google.guava:guava:23.6-android": license("MY_LICENSE", "MY_URL"),
                 "org.jboss.logging:jboss-logging:3.1.3.GA": license("MY_LICENSE", "MY_URL"),
                 "testGroup:subproject1:1.7" : "SbPrj license"
         ]
